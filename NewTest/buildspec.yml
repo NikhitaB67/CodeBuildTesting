@@ -10,7 +10,7 @@ phases:
     commands:
       - echo "Zipping deployment package..."
       - cd lib
-      - ls lib
+      - ls
       - zip -r9 ../NewTest.zip .
       - cd ..
       - zip -g NewTest.zip lambda_function.py
