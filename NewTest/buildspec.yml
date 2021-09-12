@@ -11,9 +11,10 @@ phases:
       - echo "Zipping deployment package..."
       - cd lib
       - ls
+      - pwd
       - zip -r9 ../NewTest.zip .
       - cd ..
-      - zip -g NewTest.zip lambda_function.py
+      - zip -g NewTest.zip /lambda_function.py
   post_build:
     commands:
       - echo "Updating lambda Function..."
