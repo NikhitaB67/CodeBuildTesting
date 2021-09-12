@@ -13,6 +13,8 @@ phases:
       - cd NewTest/lib
       - ls
       - pwd
+      - rm -f requirements.txt
+      - rm -f buildspec.yml
       - zip -r9 ../NewTest.zip .
       - cd ..
   post_build:
