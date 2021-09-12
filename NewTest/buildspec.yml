@@ -12,7 +12,7 @@ phases:
       - cd lib
       - zip -r9 ../NewTest.zip .
       - cd ..
-      - zip -g NewTest.zip lambda_function.py
+      - zip -g NewTest.zip NewTest/lambda_function.py
   post_build:
     commands:
       - echo "Updating lambda Function..."
